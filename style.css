@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #a198c5;
+  font-family: "Nunito", sans-serif;
+}
+
+.title {
+  color: #463444;
+
+  margin-top: 40px;
+  text-align: center;
+}
+
+.input {
+  margin: 50px 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 762px) {
+  input[type="text"] {
+    background-color: #d8b8d6;
+    height: 100px;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 8px;
+    padding: 10px 10px;
+    width: 200px !important;
+  }
+}
+
+input[type="text"] {
+  background-color: #e7e7e7;
+  height: 50px;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 8px;
+  padding: 10px 10px;
+  width: 500px;
+}
+input[type="submit"] {
+  background-color: #e7e7e7;
+  border: 2px solid black;
+  height: 50px;
+
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+
+  width: 100px;
+}
+
+.units {
+  border: 2px solid black;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-size: 20px;
+  height: 50px;
+
+  margin-top: 8px;
+  width: 60px;
+}
+
+.display {
+  background: url(/bagr.jpg);
+  border: 5px solid rgb(63, 59, 87);
+  color: #6a73aa;
+
+  height: 440px;
+
+  margin: 10px auto;
+  text-align: center;
+  padding: 30px;
+  width: 60%;
+}
+
+#loading {
+  width: 2rem;
+  height: 2rem;
+  border: 5px solid #f3f3f3;
+  border-top: 6px solid #9c41f2;
+  border-radius: 100%;
+  margin: auto;
+  visibility: hidden;
+  animation: spin 1s infinite linear;
+}
+#loading.display {
+  visibility: visible;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
